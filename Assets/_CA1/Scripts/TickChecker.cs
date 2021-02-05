@@ -12,7 +12,7 @@ using UnityEngine.SceneManagement;
 public class TickChecker : MonoBehaviour
 {
 
-    public Material CompleteMaterial;
+    public Material CompleteMaterial;//the material you want your green status tick to be
     public GameObject Tick1;
     public GameObject Tick2;
     public GameObject Tick3;
@@ -27,8 +27,22 @@ public class TickChecker : MonoBehaviour
         if (zoneName == "wetFloorSign")
         {
             Debug.Log(zoneName);
-            Tick1.GetComponent<MeshRenderer>().material = CompleteMaterial;
-            Check1 = true;
+            Tick1.GetComponent<MeshRenderer>().material = CompleteMaterial;//change material to green 
+            Check1 = true;//set boolean to true 
+        }
+
+        if (zoneName == "safetyHarness")
+        {
+            Debug.Log(zoneName);
+            Tick2.GetComponent<MeshRenderer>().material = CompleteMaterial;
+            Check2 = true;
+        }
+
+        if (zoneName == "wires")
+        {
+            Debug.Log(zoneName);
+            Tick3.GetComponent<MeshRenderer>().material = CompleteMaterial;
+            Check3 = true;
         }
     }
 
@@ -44,7 +58,7 @@ public class TickChecker : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("start");
+        //Debug.Log("start");
     }
 
     // Update is called once per frame
