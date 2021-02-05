@@ -4,6 +4,14 @@ using UnityEngine;
 using System;
 using System.IO;
 
+
+//---------------------------------------------------------------------------------
+// Author		: Mallvin Rajamohan
+// Date  		: 5/2/2021
+// Description	: Game manager to manage handling of results and exporting to excel
+//---------------------------------------------------------------------------------
+
+
 public class gameManager : MonoBehaviour
 {
     /*private bool wetFloorSignHasPassed = false;
@@ -40,6 +48,8 @@ public class gameManager : MonoBehaviour
 
         GameObject.Find("gameManager").GetComponent<runtimetest2>().endTime = DateTime.Now.ToString("hh:mm:ss tt");
         GameObject.Find("gameManager").GetComponent<runtimetest2>().writeToSheet(results);
+
+         Application.LoadLevel ("Win");
     }
 
     // Start is called before the first frame update

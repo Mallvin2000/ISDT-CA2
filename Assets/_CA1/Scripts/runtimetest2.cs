@@ -7,8 +7,8 @@ using NPOI.SS.UserModel;
 using NPOI.HSSF.UserModel;
 
 //---------------------------------------------------------------------------------
-// Author		: Vincent Goh
-// Date  		: 2019-04-23
+// Author		: Mallvin Rajamohan
+// Date  		: 5/2/2021
 // Description	: Write testing result to Excel file in Output folder.
 //---------------------------------------------------------------------------------
 public class runtimetest2 : MonoBehaviour {
