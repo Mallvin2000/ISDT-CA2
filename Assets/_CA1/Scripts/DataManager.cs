@@ -54,20 +54,49 @@ public class DataManager : MonoBehaviour
         List<string> SafetyHarnessRead = new List<string>();
         List<string> WiresRead = new List<string>();
         
+        //read the key in the json file and convert to boolean
         WetFloorRead = boolInfo[0].Split(':').ToList();
-        Debug.Log(WetFloorRead[1]);
+        //converting to boolean
+        string stringName = WetFloorRead[1];
+        bool wetFloorBool = Convert.ToBoolean(stringName);
 
-        //JsonUtility.FromJson<ActData>(json);
+        SafetyHarnessRead = boolInfo[1].Split(':').ToList();
+        //converting to boolean
+        string stringName2 = SafetyHarnessRead[1];
+        bool safteyHarnessBool = Convert.ToBoolean(stringName2);
+
+        WiresRead = boolInfo[2].Split(':').ToList();
+        //converting to boolean
+        string stringName3 = WiresRead[1];
+        bool wiresBool = Convert.ToBoolean(stringName3);
+
         reader.Close();
-        //Debug.Log(ActData.wetFloorSignCompleted);
+
+    }
+
+    public void  loadSavedData(bool wetFloorBool, bool safteyHarnessBool, bool wiresBool)
+    {
+       //set the ticks on clipboard to what they were when the game was saved
+        GameObject.Find("Clipboard").GetComponent<TickChecker>().Check1 = wetFloorBool;
+        if (wetFloorBool == true)
+        {
+            GameObject.Find("Clipboard").GetComponent<TickChecker>().enableTick("wetFloorSign");
+            GameObject.Find("gameManager").GetComponent<gameManager>().setWetFloorSignToPass();
+        }
+
+        GameObject.Find("Clipboard").GetComponent<TickChecker>().Check2 = safteyHarnessBool;
+        if (safteyHarnessBool == true)
+        {
+            GameObject.Find("Clipboard").GetComponent<TickChecker>().enableTick("safetyHarness");
+            GameObject.Find("gameManager").GetComponent<gameManager>().setSafteyHarnessToPass();
+        }
+
+        GameObject.Find("Clipboard").GetComponent<TickChecker>().Check3 = wiresBool;
+        if (wiresBool == true)
+        {
+            GameObject.Find("Clipboard").GetComponent<TickChecker>().enableTick("wires");
+            GameObject.Find("gameManager").GetComponent<gameManager>().setWiresToPass();
+        }
     }
 }
 
-
-[System.Serializable]
-public class ActData
-{
-    public bool wetFloorSignCompleted = true;
-    public bool safetyHarnessCompleted;
-    public bool wiresCompleted;
-}
