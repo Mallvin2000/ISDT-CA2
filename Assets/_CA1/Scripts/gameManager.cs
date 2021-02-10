@@ -54,7 +54,7 @@ public class gameManager : MonoBehaviour
             Application.LoadLevel ("Win");
         } else 
         {
-            Application.LoadLevel ("Lose");
+            Application.LoadLevel ("LoseScene");
         }
          
     }

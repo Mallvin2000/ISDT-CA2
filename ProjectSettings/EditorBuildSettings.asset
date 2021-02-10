@@ -17,12 +17,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_CA1/Scenes/Game.unity
     guid: 359b4f5b7ffe7c04eabc6456a7084603
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/_CA1/Scenes/Game2.unity
-    guid: 64277ca374814f94dab682dd5a80f160
+    guid: b4d33bb76b5a29b49a1f40eed16e4d84
   - enabled: 1
     path: Assets/_CA1/Scenes/Win.unity
     guid: 33f38979d86c07244835bf323db60ca0
+  - enabled: 1
+    path: Assets/_CA1/Scenes/Lose.unity
+    guid: 330e40111bc0c8348b67957d3dbb50b6
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: eb58641a5e90e1c4eaab4d684430a76c,
       type: 2}
