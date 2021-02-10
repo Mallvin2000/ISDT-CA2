@@ -49,7 +49,14 @@ public class gameManager : MonoBehaviour
         GameObject.Find("gameManager").GetComponent<runtimetest2>().endTime = DateTime.Now.ToString("hh:mm:ss tt");
         GameObject.Find("gameManager").GetComponent<runtimetest2>().writeToSheet(results);
 
-         Application.LoadLevel ("Win");
+        if (wetFloorSignResult == "Pass" && safteyHarnessResult == "Pass" && wiresResult == "Pass")
+        {
+            Application.LoadLevel ("Win");
+        } else 
+        {
+            Application.LoadLevel ("Lose");
+        }
+         
     }
 
     // Start is called before the first frame update
