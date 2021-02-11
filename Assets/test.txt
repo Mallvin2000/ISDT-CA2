@@ -20,3 +20,5 @@
 {"wetFloorSignCompleted":false,"safetyHarnessCompleted":false,"wiresCompleted":false}
 
 {"wetFloorSignCompleted":true,"safetyHarnessCompleted":true,"wiresCompleted":false}
+
+{"wetFloorSignCompleted":false,"safetyHarnessCompleted":false,"wiresCompleted":true}
