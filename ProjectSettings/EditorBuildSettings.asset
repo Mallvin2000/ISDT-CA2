@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/_CA1/Scenes/SplashScreen.unity
     guid: f056474c0168e4740bc52202e4274a4f
@@ -17,24 +14,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_CA1/Scenes/Game.unity
     guid: 359b4f5b7ffe7c04eabc6456a7084603
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/_CA1/Scenes/Game2.unity
     guid: 9741f0891cb778441907031cd63f4be3
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/_CA1/Scenes/Win.unity
     guid: 33f38979d86c07244835bf323db60ca0
   - enabled: 1
     path: Assets/_CA1/Scenes/LoseScene.unity
     guid: 697367a2826c2dd47bd3b4b4c5be370f
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: eb58641a5e90e1c4eaab4d684430a76c,
       type: 2}
